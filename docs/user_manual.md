@@ -24,6 +24,7 @@ Configuration
 
 1. Create a new configuration file: `config/qen_config.json`
 2. Edit the configuration file to specify the node and edge settings:
+
 ```json
 1. {
 2.    "nodes": [
@@ -35,9 +36,11 @@ Configuration
 8.    ]
 9. }
 ```
-Configuring the Quantum Key Distribution (QKD)
-Create a new configuration file: config/qkd_config.json
-Edit the configuration file to specify the key generation and distribution settings:
+
+### Configuring the Quantum Key Distribution (QKD)
+
+1. Create a new configuration file: config/qkd_config.json
+2. Edit the configuration file to specify the key generation and distribution settings:
 
 ```json
 1. {
@@ -46,9 +49,10 @@ Edit the configuration file to specify the key generation and distribution setti
 4. }
 ```
 
-Configuring the Entanglement Swapping (ES)
-Create a new configuration file: config/es_config.json
-Edit the configuration file to specify the entanglement swapping settings:
+### Configuring the Entanglement Swapping (ES)
+
+1. Create a new configuration file: config/es_config.json
+2. Edit the configuration file to specify the entanglement swapping settings:
 
 ```json
 1. {
@@ -57,9 +61,11 @@ Edit the configuration file to specify the entanglement swapping settings:
 ```
 
 ### Usage
-Running the Nexus Infinity Core
-Run the Nexus Infinity Core: python main.py
-Use the command-line interface to interact with the Nexus Infinity Core:
+
+#### Running the Nexus Infinity Core
+
+1. Run the Nexus Infinity Core: python main.py
+2. Use the command-line interface to interact with the Nexus Infinity Core:
 
 ### Verify
 
