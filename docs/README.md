@@ -18,7 +18,7 @@ To get started with the Nexus Infinity Core, please refer to the [Technical Guid
 License
 -------
 
-The Nexus Infinity Core is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+The Nexus Infinity Core is licensed under the Apache 2.0.
 
 Contributing
 ------------
