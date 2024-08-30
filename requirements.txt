@@ -1,0 +1,21 @@
+# Quantum Development Kit (QDK)
+qdk==1.0.0
+
+# Nexus Infinity Core dependencies
+numpy==1.22.3
+pandas==1.3.5
+scikit-learn==1.0.2
+matplotlib==3.5.1
+seaborn==0.11.2
+
+# Quantum Entanglement Network (QEN) dependencies
+qen-sdk==2.0.0
+qen-protocol==1.1.0
+
+# Quantum Key Distribution (QKD) dependencies
+qkd-sdk==3.0.0
+qkd-protocol==2.0.0
+
+# Entanglement Swapping (ES) dependencies
+es-sdk==4.0.0
+es-protocol==3.0.0
