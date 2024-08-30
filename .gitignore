@@ -1,3 +1,34 @@
-# Build folder and log file
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment files
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+logs/
+
+# Config files
+config/*.json
+
+# Data files
+data/
+
+# Node modules
+node_modules/
+
+# Distribution files
+dist/
 build/
-build.log
+
+# Egg files
+*.egg
+
+# Manifest files
+MANIFEST
