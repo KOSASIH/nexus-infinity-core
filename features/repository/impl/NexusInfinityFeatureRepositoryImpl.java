@@ -2,43 +2,57 @@ package com.nexusinfinitycore.features.repository.impl;
 
 import com.nexusinfinitycore.features.repository.NexusInfinityFeatureRepository;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
+@Transactional
 public class NexusInfinityFeatureRepositoryImpl implements NexusInfinityFeatureRepository {
-    private Map<String, Boolean> features = new ConcurrentHashMap<>();
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Override
     public List<String> getFeatures() {
-        return new ArrayList<>(features.keySet());
+        return entityManager.createQuery("SELECT f.name FROM Feature f", String.class).getResultList();
     }
 
     @Override
     public void addFeature(String feature) {
-        features.put(feature, false);
+        Feature newFeature = new Feature(feature, false);
+        entityManager.persist(newFeature);
     }
 
     @Override
     public void removeFeature(String feature) {
-        features.remove(feature);
+        entityManager.createQuery("DELETE FROM Feature f WHERE f.name = :feature")
+                .setParameter("feature", feature)
+                .executeUpdate();
     }
 
     @Override
     public boolean isFeatureEnabled(String feature) {
-        return features.getOrDefault(feature, false);
+        Feature featureEntity = entityManager.find(Feature.class, feature);
+        return featureEntity != null && featureEntity.isEnabled();
     }
 
     @Override
     public void enableFeature(String feature) {
-        features.put(feature, true);
+        Feature featureEntity = entityManager.find(Feature.class, feature);
+        if (featureEntity != null) {
+            featureEntity.setEnabled(true);
+            entityManager.merge(featureEntity);
+        }
     }
 
     @Override
     public void disableFeature(String feature) {
-        features.put(feature, false);
+        Feature featureEntity = entityManager.find(Feature.class, feature);
+        if (featureEntity != null) {
+            featureEntity.setEnabled(false);
+            entityManager.merge(featureEntity);
+        }
     }
 }
