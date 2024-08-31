@@ -2,6 +2,7 @@ package com.nexusinfinitycore.features.service.impl;
 
 import com.nexusinfinitycore.features.repository.NexusInfinityFeatureRepository;
 import com.nexusinfinitycore.features.service.NexusInfinityFeatureService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
