@@ -14,7 +14,7 @@ setup(
         'qdk==1.0.0',
         'numpy==1.22.3',
         'pandas==1.3.5',
-        'scikit-learn==1.0.2',
+        'scikit-learn==1.5.0',
         'matplotlib==3.5.1',
         'seaborn==0.11.2',
         'qen-sdk==2.0.0',
