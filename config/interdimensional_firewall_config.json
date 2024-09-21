@@ -1,0 +1,7 @@
+{
+  "anomaly_detection_algorithm": "machine_learning",
+  "anomaly_detection_threshold": 0.01,
+  "data_stream_sampling_rate": 1000,
+  "anomaly_detection_window_size": 100,
+  "false_positive_rate": 0.001
+}
