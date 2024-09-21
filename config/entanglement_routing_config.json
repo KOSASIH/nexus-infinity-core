@@ -1,0 +1,8 @@
+{
+  "entanglement_swapping_protocol": "EPR",
+  "entanglement_distribution_algorithm": "quantum_teleportation",
+  "entanglement_routing_topology": "mesh",
+  "number_of_nodes": 10,
+  "entanglement_generation_rate": 100,
+  "entanglement_swapping_rate": 50
+}
