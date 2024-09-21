@@ -1,0 +1,7 @@
+{
+  "multiverse_addressing_scheme": "hierarchical",
+  "number_of_universes": 10^6,
+  "address_space_size": 256,
+  "inter_universe_communication_protocol": "wormhole",
+  "universe_address_resolution_algorithm": "hash_table"
+}
