@@ -1,0 +1,8 @@
+{
+  "agi_node_topology": "cluster",
+  "number_of_nodes": 100,
+  "node_computation_power": 10^12,
+  "node_memory_size": 10^15,
+  "node_communication_bandwidth": 10^9,
+  "agi_node_scheduling_algorithm": "priority_queue"
+}
