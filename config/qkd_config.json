@@ -1,0 +1,9 @@
+{
+  "qkd_protocol": "BB84",
+  "key_exchange_algorithm": "E91",
+  "quantum_error_correction": "surface_code",
+  "key_size": 256,
+  "quantum_bit_error_rate": 0.01,
+  "classical_post_processing": true,
+  "secure_key_rate": 1000
+}
